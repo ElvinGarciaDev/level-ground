@@ -1,0 +1,344 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  font-size: 2rem;
+  background: rgba(105, 118, 136, 1);
+
+}
+
+#hamburger {
+  display: none;
+}
+
+header a  {
+  padding-left: 2%;
+  list-style: none;
+  text-decoration: none;
+  color: rgba(241, 241, 241, 1);
+
+}
+
+header img {
+  margin-left: 35%;
+  margin-right: 28%;
+}
+
+header img + a {
+  display: inline-block;
+  padding-left: 5px;
+  background: rgba(255, 255, 255, 1);
+  color: rgba(105, 118, 136, 1);
+  border-radius: .2rem;
+}
+
+/* MAIN SECTION - WHERE GRIT*/
+main {
+  background: rgba(105, 118, 136, 1);
+}
+
+main > section {
+  margin: 0 auto;
+  width: 70%;
+  padding: 10px;
+}
+
+main > section h1 {
+  font-size: 5rem;
+  color: rgba(241, 241, 241, 1);
+  text-align: center;
+}
+
+main > section p {
+  font-size: 2.6rem;
+  text-align: center;
+  color: rgba(241, 241, 241, 1);
+
+}
+
+main > section a {
+  font-size: 1.6rem;
+  text-align: center;
+  color: rgba(241, 241, 241, 1);
+  text-decoration: none;
+  list-style: none;
+  margin-left: 45%;
+}
+
+main > section i {
+  padding-right: 1%;
+  font-size: 2rem;
+  padding-bottom: 8%;
+}
+
+/* WHY section*/
+
+.why {
+  background: rgba(255, 255, 255, 1);
+}
+
+.why section {
+  margin: 0 auto;
+  width: 70%;
+  padding: 10px;
+}
+
+.why section h2 {
+  font-size: 3.0rem;
+  text-align: center;
+  color: rgba(24, 31, 41, 1);
+  margin-top: 5%;
+}
+
+.why section p {
+  font-size: 2.6rem;
+  text-align: center;
+  color: rgba(24, 31, 41, 1);
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: 5%;
+}
+
+/*THIRD SECTION. Two SEC inside*/
+.thirdSection {
+  background: rgba(220, 223, 226, 1);
+}
+
+.thirdSection section{
+  width: 50%;
+  display: inline-block;
+
+  margin: 0 auto;
+  padding: 50px;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.thirdSection section + section {
+  float: left;
+}
+
+.thirdSection div {
+  background: rgba(105, 118, 136, 1);
+  height: 200px;
+  width: 50%;
+  margin: auto;
+}
+
+.thirdSection h4 {
+  font-size: 2rem;
+  color: rgba(24, 31, 41, 1);
+  text-align: center;
+}
+
+.thirdSection p {
+  font-size: 2rem;
+  color: rgba(24, 31, 41, 1);
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+.thirdSection a, .volunteer a {
+  font-size: 1.6rem;
+  display: inline-block;
+  text-align: center;
+  color: rgba(24, 31, 41, 1);
+  text-decoration: none;
+  list-style: none;
+  margin-left: 40%;
+  border: .5px solid black;
+  height: 50px;
+  width: 150px;
+  padding-top: 15px;
+}
+
+/* VOLUNTEER SECTION */
+.volunteer {
+  background: rgba(255, 255, 255, 1);
+}
+
+.volunteer section {
+  margin: 0 auto;
+
+  width: 50%;
+  padding: 50px;
+}
+
+.volunteer h2 {
+  font-size: 3rem;
+  color: rgba(24, 31, 41, 1);
+  text-align: center;
+}
+
+.volunteer p {
+  font-size: 2rem;
+  color: rgba(24, 31, 41, 1);
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+}
+
+
+/* FOOTER */
+footer {
+  background: rgba(24, 31, 41, 1);
+}
+
+
+footer section {
+  width: 50%;
+
+  padding-top: 1%;
+  padding-bottom: 2%;
+  color: white;
+  float: left;
+  font-size: 1.5rem;
+  padding-left: 3%;
+}
+
+/*THREE icons*/
+#icons li {
+  font-size: 2.5rem;
+  float: left;
+  list-style: none;
+  margin-right: 3%;
+  padding-bottom: 3%;
+
+
+}
+
+#icons li i {
+  color: white;
+
+}
+
+.site span {
+  display: block;
+  margin-top: 5%;
+  color: rgba(105, 118, 136, 1);
+}
+
+.site a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* FOOTER right NAV*/
+
+#rightSideNav span{
+  display: block;
+  margin-left: 60%;
+
+}
+
+#address {
+  margin-top: 2%;
+  width: 19%;
+}
+
+footer p {
+  clear: both;
+  color: white;
+  font-size: 2rem;
+  padding-left: 3%;
+  border-top: 1px solid white;
+  padding-top: 1%;
+
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 768px){
+  header {
+    display: none;
+  }
+  #heading {
+    font-size: 2.5rem;
+  }
+
+  #mission {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .thirdSection section {
+    width: 100%;
+  }
+  .thirdSection div {
+    display: none;
+  }
+
+  .thirdSection a {
+    margin-left: 25%;
+  }
+
+  .volunteer {
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .volunteer h2 {
+    width: 30rem;
+    margin-left: -10rem;
+  }
+  .volunteer p {
+    width: 30rem;
+    margin-left: -10rem;
+  }
+
+  #rightSideNav {
+    float: none;
+    display: block;
+    width: 80%;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  header {
+    display: none;
+  }
+
+  .thirdSection section {
+    width: 100%;
+  }
+
+  .thirdSection a {
+    margin-left: 25%;
+  }
+
+}
